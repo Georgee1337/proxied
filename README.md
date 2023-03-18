@@ -34,10 +34,10 @@ go build
 The server listens on port 80 by default, but you can change this by modifying the last line of the main function.
 
 
-### Features
+# Features
 
-# Caching
+### Caching
 This server caches images to improve performance. When a request for an image is received, the server checks if the image is already in the cache. If the image is in the cache and has not expired, the server serves the image from the cache instead of forwarding the request to the target server.
 
-# Rate Limiting
+### Rate Limiting
 This server rate limits incoming requests to avoid overloading the server. The rate limit is set to 10 requests per second per IP address. If a client exceeds the rate limit, the server responds with a 429 Too Many Requests error.
